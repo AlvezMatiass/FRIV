@@ -1,0 +1,106 @@
+/*
+
+Juegos HTML
+
+*/
+
+// Juegos
+
+.juegos_header {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.juegos_titulo {
+    h3 {
+        font-size: 3rem;
+        color: rgb(43, 42, 42);
+        font-weight: 900;
+    }
+    p {
+        font-size: 1.8rem;
+        color: rgb(43, 42, 42);
+        span {
+            color: black;
+            font-weight: 700;
+        }
+    }
+}
+
+.juegos_juegos {
+    margin: 1rem 0;
+    a {
+        color: rgb(43, 42, 42);
+    }
+}
+
+.simon_juego {
+    display: flex;
+    background-color: rgb(43, 42, 42);
+    color: #f2f1ec;
+    border-radius: 0 10px 0 10px;
+    overflow: hidden;
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4rem;
+    }
+    img {
+        border-radius: 0 10px 0 0;
+        width: 300px;
+        filter: drop-shadow(-14px 0px 9px #1F1F1F);
+    }
+}
+
+@media (max-width: 560px) {
+
+    .juegos_titulo {
+        h3 {
+            font-size: 2.7rem;
+        }
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .simon_juego {
+        p {
+            font-size: 1.4rem;
+            margin: 0 2.8rem;
+        }
+        img {
+            width: 230px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+
+    .juegos_titulo {
+        h3 {
+            font-size: 2.4rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .simon_juego {
+        p {
+            font-size: 1rem;
+            margin: 0 1.5rem;
+        }
+        img {
+            width: 180px;
+        }
+    }
+}

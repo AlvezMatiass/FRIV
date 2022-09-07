@@ -1,0 +1,170 @@
+
+/* Animacion Fondo Index */
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+/* CSS INDEX */
+
+.ind_header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ind_body {
+    color: #999;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    -webkit-animation: bg-scrolling-reverse 3s infinite;
+    -moz-animation: bg-scrolling-reverse 3s infinite;
+    -o-animation: bg-scrolling-reverse 3s infinite;
+    animation: bg-scrolling-reverse 3s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    cursor: crosshair;
+}
+
+.ind_titulo_conteiner {
+    color: rgb(43, 42, 42);
+    line-height: 4.6rem;
+    h3 {
+        font-size: 9rem;
+        font-weight: 900;
+    }
+    p {
+        font-size: 2.8rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+.ind_conteiner_botones {
+    display: flex;
+    flex-direction: column;
+    button {
+        font-size: 1.1rem;
+        width: 240px;
+        border: none;
+        background-color: rgb(43, 42, 42);
+        color: #f2f1ec;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 1rem;
+        margin: 0 0 .4rem 0;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+#ind_formulario_conteiner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-2000px);
+}
+
+#ind_formulario_conteinerDos {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-2000px);
+}
+
+.ind_formulario_registrar_conteiner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ind_formulario_registrar {
+    height: 370px;
+    width: 340px;
+    background-color: #f2f1ec;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label {
+        font-size: 2rem;
+        color: rgb(43, 42, 42);
+        font-weight: 900;
+        margin: 0 0 1rem 0;
+        line-height: 1rem;
+        p {
+          font-size: 1.2rem;
+        }
+    }
+    button, input {
+        font-size: 1rem;
+        width: 180px;
+        border: none;
+        background-color: rgb(43, 42, 42);
+        color: #f2f1ec;
+        cursor: pointer;
+        font-weight: 300;
+        padding: .5rem;
+        margin: .5rem 0 .2rem 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    input {
+        width: 270px;
+    }
+}
+
+.ind_link {
+  color: #f2f1ec
+}
+
+.activar_registrar {
+    transform: translateY(0);
+}
+

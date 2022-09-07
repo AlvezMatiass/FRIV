@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Friv</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FUENTE -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="ind_body">
+    
+    <header class="ind_header">
+        <div class="ind_titulo_conteiner">
+            <h3>Friv</h3>
+            <p>¡Bienvenido!</p>
+        </div>
+        <div class="ind_conteiner_botones">
+            <button id="ind_registrarse_movimiento">Registrarte</button>
+            <button id="ind_iniciar">Iniciar Sesion</button>
+            <a href="./pages/juegos.html" class="ind_link"><button id="ind_invitado">Invitado</button></a>
+        </div>
+    </header>
+
+    <div id="ind_formulario_conteiner">
+        <div class="ind_formulario_registrar_conteiner">
+            <form class="ind_formulario_registrar" id="ind_formulario">
+                <label for="">Registrarse</label>
+                <input type="text" id="ind_formulario_registrar" placeholder="Ingrese un usuario..." required>
+                <input type="password" id="ind_formulario_password" placeholder="Ingrese una contraseña..." required>
+                <button type="submit" id="ind_registrar" class="btn_registrarte">Registrarte</button>
+                <button id="ind_salir_movimiento">Salir</button>
+            </form>
+        </div>
+    </div>
+    <div id="ind_formulario_conteinerDos">
+        <div class="ind_formulario_registrar_conteiner">
+            <form class="ind_formulario_registrar" id="ind_formulario_pass">
+                <label for="">Iniciar Sesion</label>
+                <label for="" id="error_iniciar_sesion"></label>
+                <input type="text" name="usuario" id="ind_formulario_iniciar" placeholder="Ingrese un usuario...">
+                <input type="password" name="password" id="ind_formulario_password_iniciar" placeholder="Ingrese una contraseña...">
+                <button type="submit" id="ind_iniciar_sesion" class="btn_registrarte">Iniciar Sesion</button>
+                <button id="ind_salir_movimiento_iniciar">Salir</button>
+            </form>
+        </div>
+    </div>
+
+
+<!-- JS -->
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>
