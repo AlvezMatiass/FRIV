@@ -14,7 +14,7 @@ class Juego {
         this.posicion_usuario = 0;
         this.rondas_totales = 40;
         this.secuencia = [];
-        this.velocidad = 1000;
+        this.velocidad = 800;
         this.bloquear_botones = true;
         this.cuadrado = Array.from(cuadrados);
         this.display = {
