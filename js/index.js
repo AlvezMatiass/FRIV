@@ -75,7 +75,7 @@ class Usuario {
 
 enviar_registrar.addEventListener("submit" , (e) => {
     e.preventDefault();
-    
+
     
     if(registrar_password.value != "" && registrar_usuario.value != ""){
         let nuevo_usuario = new Usuario(registrar_usuario.value , registrar_password.value);
