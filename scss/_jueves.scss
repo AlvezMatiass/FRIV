@@ -1,0 +1,34 @@
+/* JUEVES CSS */
+
+.j_body {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 0%, rgba(40,40,40,1) 41%, rgba(56,56,56,1) 100%);
+    color: white;
+}
+
+#j_conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 260px;
+        padding: 0 1rem;
+    }
+}
+
+.j_titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem 0;
+} 
+
+@media (max-width: 600px) {
+    #j_conteiner {
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+    }
+}

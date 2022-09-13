@@ -187,7 +187,8 @@ Juegos HTML
   background-color: #2b2a2a;
   color: #f2f1ec;
   border-radius: 0 10px 0 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 1rem; }
   .simon_juego p {
     font-size: 2rem;
     font-weight: 700;
@@ -368,3 +369,29 @@ JUEGO SIMON SWIPE
     margin: .4rem;
     border-radius: 2px;
     background-color: #EBEED0; } }
+
+/* JUEVES CSS */
+.j_body {
+  background: black;
+  background: radial-gradient(circle, black 0%, #1d1d1d 0%, #282828 41%, #383838 100%);
+  color: white; }
+
+#j_conteiner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #j_conteiner img {
+    max-width: 260px;
+    padding: 0 1rem; }
+
+.j_titulo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem 0; }
+
+@media (max-width: 600px) {
+  #j_conteiner iframe {
+    width: 300px;
+    height: 200px; } }
