@@ -4,6 +4,9 @@ let rondas = document.getElementById("rondas");
 let cuadrados = document.getElementsByClassName("cuadrado");
 let empezar = document.getElementById("empezar");
 
+let perder_cartel = document.getElementById("perder_cartel");
+let ok_boton = document.getElementById("perder_ok");
+
 //
 // JUEGO
 //
@@ -111,6 +114,10 @@ class Juego {
         this.fallar.play();
         this.display.empezar.disabled = false;
         this.bloquear_botones = true;
+        perder_cartel.style.transform = "translateY(-390px)";
+        perder_cartel.addEventListener("click", function(){
+            perder_cartel.style.transform = "translateY(-2000px)";
+        })
     }
 
     ganar_juego(){
@@ -123,6 +130,7 @@ class Juego {
     }
 
 }
+
 
 
 let juego = new Juego(rondas, cuadrados, empezar);

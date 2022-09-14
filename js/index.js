@@ -14,25 +14,9 @@ let transformar_cambiar_iniciar_sesion = document.getElementById("ind_formulario
 let boton_iniciar_movimiento = document.getElementById("ind_iniciar");
 let boton_salir_iniciar = document.getElementById("ind_salir_movimiento_iniciar");
 
-// let registrarse
-
-let registrar_usuario = document.getElementById("ind_formulario_registrar");
-let registrar_password = document.getElementById("ind_formulario_password");
-
-let enviar_registrar = document.getElementById("ind_formulario");
-
-// let iniciar sesion
-
-let iniciar_usuario = document.getElementById("ind_formulario_iniciar");
-let iniciar_password = document.getElementById("ind_formulario_password_iniciar");
-
-let iniciar_sesion = document.getElementById("ind_formulario_pass");
-let error_iniciar = document.getElementById("error_iniciar_sesion");
-
 //
 // eventos registrarse
 //
-
 
 boton_registrar_movimiento.addEventListener("click" , function(){
     tranformar_cambiar.style.transform = "translateY(0)";
@@ -60,60 +44,59 @@ boton_salir_iniciar.addEventListener("click" , function(){
 // arreglo de usuarios
 //
 
-let usuario_contenedor = [];
+// let iniciar sesion
 
-class Usuario {
-    constructor(usuario, password){
-        this.usuario = usuario;
-        this.password = password;
-    }
-}
+let iniciar_usuario = document.getElementById("ind_formulario_iniciar");
+let iniciar_password = document.getElementById("ind_formulario_password_iniciar");
 
-//
-// registrarse
-//
+let iniciar_sesion = document.getElementById("ind_formulario_pass");
+let error_iniciar = document.getElementById("error_iniciar_sesion");
+
+// let registrarse
+
+let registrar_usuario = document.getElementById("ind_formulario_registrar");
+let registrar_password = document.getElementById("ind_formulario_password");
+
+let enviar_registrar = document.getElementById("ind_formulario");
+
+
+// prueba
 
 enviar_registrar.addEventListener("submit" , (e) => {
     e.preventDefault();
 
-    
-    if(registrar_password.value != "" && registrar_usuario.value != ""){
-        let nuevo_usuario = new Usuario(registrar_usuario.value , registrar_password.value);
-        usuario_contenedor.push(nuevo_usuario);
-        console.log(usuario_contenedor);
+    let user_reg = registrar_usuario.value;
+    let pass_reg = registrar_password.value;
 
-        let arregloJSON = JSON.stringify(usuario_contenedor);
-        localStorage.setItem("usuario_contenedor" , arregloJSON);
+    let usuario = {
+        user: user_reg,
+        pass: pass_reg
+    };
 
-        let recuperarJSON = localStorage.getItem("usuario_contenedor");
+    let JSON_registrarse = JSON.stringify(usuario);
+    localStorage.setItem("usuario", JSON_registrarse);
 
-        recuperarJSON = JSON.parse(recuperarJSON);   
+    tranformar_cambiar.style.transform = "translateY(-2000px)";
+    tranformar_cambiar.style.transition = "1s";
+})
 
-        tranformar_cambiar.style.transform = "translateY(-2000px)";
-        tranformar_cambiar.style.transition = "1s";
-    }    
-});
-
-//
-// iniciar sesion
-//
-
-iniciar_sesion.addEventListener("submit" , (e) =>{
+iniciar_sesion.addEventListener("submit" , (e) => {
     e.preventDefault();
 
-    let us = iniciar_usuario.value;
-    let pa = iniciar_password.value;
+    let user_in = iniciar_usuario.value;
+    let pass_in = iniciar_password.value;
 
-    for(let user of usuario_contenedor){
-        if(us == user.usuario && pa == user.password){
-            localStorage.setItem("Usuario", user.usuario);
-            window.location.href = "./pages/juegos.html"
-        } else {
-            error_iniciar.innerHTML = "<p>Usuario no encontrado :(</p>";
-        }
-    }  
-});
+    let usuario_in = localStorage.getItem("usuario");
+    let datos = JSON.parse(usuario_in);
 
+    if (user_in == datos.user && pass_in == datos.pass){
+        window.location.href = "./pages/juegos.html"
+    } else if (user_in == null) {
+        error_iniciar.innerHTML = "<p>Espacios vacios</p>";
+    } else {
+        error_iniciar.innerHTML = "<p>Usuario no encontrado :(</p>";
+    }
+})
 
 
 

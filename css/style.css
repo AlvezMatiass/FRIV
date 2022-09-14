@@ -304,6 +304,36 @@ JUEGO SIMON SWIPE
 .ganador {
   animation: vuelta 1s ease-in-out; }
 
+#perder_cartel {
+  position: relative;
+  transform: translateY(-2000px); }
+  #perder_cartel div {
+    display: flex;
+    flex-direction: column;
+    background-color: #dddfcc;
+    padding: .5rem 0;
+    width: 250px;
+    margin: auto;
+    align-items: center; }
+    #perder_cartel div p {
+      color: #222121;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      margin: .5rem 0; }
+    #perder_cartel div button {
+      width: 100px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 400;
+      padding: .5rem 0;
+      margin: 0 1rem;
+      border-radius: 2px;
+      color: white;
+      background-color: #222121; }
+
 @keyframes spin {
   100% {
     transform: rotate(180deg); } }

@@ -94,6 +94,40 @@ JUEGO SIMON SWIPE
     animation: vuelta 1s ease-in-out;
 }
 
+#perder_cartel {
+    position: relative;
+    transform: translateY(-2000px);
+    div {
+        display: flex;
+        flex-direction: column;
+        background-color: #dddfcc;
+        padding: .5rem 0;
+        width: 250px;
+        margin: auto;
+        align-items: center;
+        p {
+            color: rgb(34, 33, 33);
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-style: italic;
+            text-align: center;
+            margin: .5rem 0;
+        }
+        button {
+            width: 100px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 400;
+            padding: .5rem 0;
+            margin: 0 1rem;
+            border-radius: 2px;
+            color: white;
+            background-color: rgb(34, 33, 33);
+        }
+    }
+}
+
 @keyframes spin {
     100% {
         transform: rotate(180deg);
