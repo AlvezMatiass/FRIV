@@ -91,10 +91,8 @@ iniciar_sesion.addEventListener("submit" , (e) => {
 
     if (user_in == datos.user && pass_in == datos.pass){
         window.location.href = "./pages/juegos.html"
-    } else if (user_in == "" || pass_in == "") {
-        error_iniciar.innerHTML = "<p>Espacios vacios</p>";
     } else {
-        error_iniciar.innerHTML = "<p>Usuario no encontrado :(</p>";
+        error_iniciar.innerHTML = "<p>Usuario o Contraseña no encontrado :(</p>";
     }
 })
 
