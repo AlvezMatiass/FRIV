@@ -83,15 +83,15 @@ enviar_registrar.addEventListener("submit" , (e) => {
 iniciar_sesion.addEventListener("submit" , (e) => {
     e.preventDefault();
 
-    let user_ini = iniciar_usuario.value;
-    let pass_ini = iniciar_password.value;
+    let user_in = iniciar_usuario.value;
+    let pass_in = iniciar_password.value;
 
     let usuario_in = localStorage.getItem("usuario");
     let datos = JSON.parse(usuario_in);
 
-    if (user_ini == datos.user && pass_ini == datos.pass){
+    if (user_in == datos.user && pass_in == datos.pass){
         window.location.href = "./pages/juegos.html"
-    } else if (user_ini == "" || pass_ini == "") {
+    } else if (user_in == "" || pass_in == "") {
         error_iniciar.innerHTML = "<p>Espacios vacios</p>";
     } else {
         error_iniciar.innerHTML = "<p>Usuario no encontrado :(</p>";
