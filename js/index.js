@@ -90,6 +90,7 @@ iniciar_sesion.addEventListener("submit" , (e) => {
     let datos = JSON.parse(usuario_in);
 
     if (user_in == datos.user && pass_in == datos.pass){
+        localStorage.setItem("usb" , user_in);
         window.location.href = "./pages/juegos.html"
     } else {
         error_iniciar.innerHTML = "<p>Usuario o Contraseña no encontrado :(</p>";
