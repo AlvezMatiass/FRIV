@@ -15,9 +15,9 @@ class Juego {
     constructor(rondas, cuadrados, empezar){
         this.rondas = 0;
         this.posicion_usuario = 0;
-        this.rondas_totales = 40;
+        this.rondas_totales = 20;
         this.secuencia = [];
-        this.velocidad = 1100;
+        this.velocidad = 1000;
         this.bloquear_botones = true;
         this.cuadrado = Array.from(cuadrados);
         this.display = {
@@ -26,6 +26,10 @@ class Juego {
         }
         this.fallar = new Audio('../simon_sonidos/perder.wav');
         this.sonido_botones = [
+            new Audio('../simon_sonidos/uno.mp3'),
+            new Audio('../simon_sonidos/dos.mp3'),
+            new Audio('../simon_sonidos/tres.mp3'),
+            new Audio('../simon_sonidos/cuatro.mp3'),
             new Audio('../simon_sonidos/uno.mp3'),
             new Audio('../simon_sonidos/dos.mp3'),
             new Audio('../simon_sonidos/tres.mp3'),
@@ -59,7 +63,7 @@ class Juego {
     }
 
     color_random(){
-        return Math.floor(Math.random() * 4);
+        return Math.floor(Math.random() * 8);
     }
 
     cuadrado_click(value){
@@ -114,6 +118,7 @@ class Juego {
         this.fallar.play();
         this.display.empezar.disabled = false;
         this.bloquear_botones = true;
+
         perder_cartel.style.transform = "translateY(-390px)";
         perder_cartel.addEventListener("click", function(){
             perder_cartel.style.transform = "translateY(-2000px)";
