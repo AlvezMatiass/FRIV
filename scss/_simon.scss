@@ -8,6 +8,7 @@ JUEGO SIMON SWIPE
 .simon_body {
     display: flex;
     height: 100vh;
+    
     background-color: rgb(31, 31, 31);
     font-family: 'Roboto', sans-serif;
 }
@@ -19,8 +20,8 @@ JUEGO SIMON SWIPE
 
 .contenedor_botones {
     display: grid;
-    grid-gap: .3rem;
-    grid-template-columns: auto auto;
+    grid-gap: .5rem;
+    grid-template-columns: auto auto auto;
     background-color: rgb(26, 26, 26);
     padding: .8rem;
     border-radius: 1rem;
@@ -28,8 +29,8 @@ JUEGO SIMON SWIPE
 
 .cuadrado {
     border-radius: 1rem;
-    width: 10rem;
-    height: 10rem;
+    width: 9.5rem;
+    height: 9.5rem;
     cursor: pointer;
     -webkit-box-shadow: inset 0px 0px 42px 6px rgba(0,0,0,0.29); 
     box-shadow: inset 0px 0px 42px 6px rgba(0,0,0,0.29);
@@ -56,7 +57,7 @@ JUEGO SIMON SWIPE
 }
 
 .cinco {
-    background-color: #E072A4;
+    background-color: #55286F;
 }
 
 .seis {
@@ -69,6 +70,22 @@ JUEGO SIMON SWIPE
 
 .ocho {
     background-color: #457B9D;
+}
+
+.nueve {
+    background-color: #E072A4;
+}
+
+.diez {
+    background-color: #414066;
+}
+
+.once {
+    background-color: #BCAB79;
+}
+
+.doce {
+    background-color: #82A3A1;
 }
 
 #contenedor_info {
@@ -184,12 +201,12 @@ JUEGO SIMON SWIPE
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 450px) {
 
     .contenedor_todo {
         position: relative;
         margin: auto;
-        width: 220px;
+        width: 250px;
     }
 
     .contenedor_botones {
@@ -199,8 +216,8 @@ JUEGO SIMON SWIPE
 
     .cuadrado {
         border-radius: .7rem;
-        width: 6rem;
-        height: 6rem;
+        width: 4.5rem;
+        height: 4.5rem;
         cursor: pointer;
         -webkit-box-shadow: inset 0px 0px 42px 6px rgba(0,0,0,0.29); 
         box-shadow: inset 0px 0px 42px 6px rgba(0,0,0,0.29);

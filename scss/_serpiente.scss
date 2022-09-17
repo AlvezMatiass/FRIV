@@ -1,0 +1,29 @@
+/* SERPIENTE HTML */
+// SERPIENTE
+
+.s_body {
+    background-color: #353531;
+    color: white;
+}
+
+#s_tablero {
+    width: 606px;
+    height: 606px;
+    background-color: #222221;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    div {
+        width: 60px;
+        height: 60px;
+    }
+
+    .serpiente {
+        background-color: #839788;
+    }
+
+    .manzana {
+        background-color: #F71735;
+    }
+
+}

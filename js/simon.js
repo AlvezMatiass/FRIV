@@ -33,6 +33,10 @@ class Juego {
             new Audio('../simon_sonidos/uno.mp3'),
             new Audio('../simon_sonidos/dos.mp3'),
             new Audio('../simon_sonidos/tres.mp3'),
+            new Audio('../simon_sonidos/cuatro.mp3'),
+            new Audio('../simon_sonidos/uno.mp3'),
+            new Audio('../simon_sonidos/dos.mp3'),
+            new Audio('../simon_sonidos/tres.mp3'),
             new Audio('../simon_sonidos/cuatro.mp3')
         ]
     }
@@ -63,7 +67,7 @@ class Juego {
     }
 
     color_random(){
-        return Math.floor(Math.random() * 8);
+        return Math.floor(Math.random() * 12);
     }
 
     cuadrado_click(value){
