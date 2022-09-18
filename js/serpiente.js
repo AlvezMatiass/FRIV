@@ -14,13 +14,13 @@ let izquierda = document.getElementById("s_izquierda");
 
 // variables para el juego
 
-let witdh = 10;
+let altura = 20;
 let jugador_posicion = 0;
 let manzana = 0;
 let posicion_serpiente = [2,1,0];
 let dirreccion = 1;
 let puntuacion = 0;
-let velocidad = 0.95;
+let velocidad = 0.9;
 let intervalo_tiempo = 0;
 let intervalo = 0;
 
@@ -30,7 +30,7 @@ function empezar(){
     posicion_serpiente.forEach(index => cuadrado[index].classList.remove('serpiente'));
     cuadrado[manzana].classList.remove('manzana');
     clearInterval(intervalo);
-    score = 0;
+    puntuacion = 0;
     manzana_random();
     dirreccion = 1;
     puntuacion_numero.innerText = puntuacion;
@@ -46,10 +46,10 @@ function movimientos(){
     // Movimientos del jugador
     
     if ( 
-        (posicion_serpiente[0] + witdh >= (witdh * witdh) && dirreccion === witdh) || 
-        (posicion_serpiente[0] % witdh === witdh -1 && dirreccion === 1) || 
-        (posicion_serpiente[0] % witdh === 0 && dirreccion === -1 ) || 
-        (posicion_serpiente[0] - witdh < 0 && dirreccion === -witdh) || 
+        (posicion_serpiente[0] + altura >= (altura * altura) && dirreccion === altura) || 
+        (posicion_serpiente[0] % altura === altura -1 && dirreccion === 1) || 
+        (posicion_serpiente[0] % altura === 0 && dirreccion === -1 ) || 
+        (posicion_serpiente[0] - altura < 0 && dirreccion === -altura) || 
         cuadrado[posicion_serpiente[0] + dirreccion].classList.contains('serpiente') )
         {
         return clearInterval(intervalo);
@@ -96,22 +96,22 @@ function controles(e) {
     if (e.keyCode === 39){
         dirreccion = 1
     } else if (e.keyCode === 38) {
-        dirreccion = -witdh;
+        dirreccion = -altura;
     } else if (e.keyCode === 37) {
         dirreccion = -1;
     } else if (e.keyCode === 40) {
-        dirreccion = +witdh;
+        dirreccion = +altura;
     }
 
 }
 
-// controles celular
+// controles botones
 
 arriba.addEventListener("click" , () => {
-    dirreccion = -witdh
+    dirreccion = -altura
 })
 abajo.addEventListener("click", () => {
-    dirreccion = +witdh;
+    dirreccion = +altura;
 })
 derecha.addEventListener("click", () => {
     dirreccion = 1
