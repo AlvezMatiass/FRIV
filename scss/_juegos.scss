@@ -18,12 +18,12 @@ Juegos HTML
 .juegos_titulo {
     h3 {
         font-size: 3rem;
-        color: rgb(43, 42, 42);
+        color: #222222;
         font-weight: 900;
     }
     p {
         font-size: 1.8rem;
-        color: rgb(43, 42, 42);
+        color: #222222;
         span {
             color: black;
             font-weight: 700;
@@ -40,8 +40,8 @@ Juegos HTML
 
 .simon_juego {
     display: flex;
-    background-color: rgb(43, 42, 42);
-    color: #f2f1ec;
+    background-color: #222222;
+    color: #f7f3e3;
     border-radius: 0 10px 0 10px;
     overflow: hidden;
     margin: 1rem;

@@ -167,12 +167,12 @@ Juegos HTML
 
 .juegos_titulo h3 {
   font-size: 3rem;
-  color: #2b2a2a;
+  color: #222222;
   font-weight: 900; }
 
 .juegos_titulo p {
   font-size: 1.8rem;
-  color: #2b2a2a; }
+  color: #222222; }
   .juegos_titulo p span {
     color: black;
     font-weight: 700; }
@@ -184,8 +184,8 @@ Juegos HTML
 
 .simon_juego {
   display: flex;
-  background-color: #2b2a2a;
-  color: #f2f1ec;
+  background-color: #222222;
+  color: #f7f3e3;
   border-radius: 0 10px 0 10px;
   overflow: hidden;
   margin: 1rem; }
@@ -422,9 +422,8 @@ JUEGO SIMON SWIPE
 
 /* JUEVES CSS */
 .j_body {
-  background: black;
-  background: radial-gradient(circle, black 0%, #1d1d1d 0%, #282828 41%, #383838 100%);
-  color: white; }
+  background-color: #222222;
+  color: #f7f3e3; }
 
 #j_conteiner {
   height: 100vh;
@@ -490,7 +489,7 @@ JUEGO SIMON SWIPE
 
 #s_tablero {
   width: 606px;
-  height: 456px;
+  height: 606px;
   background-color: #25605A;
   display: flex;
   flex-wrap: wrap;
@@ -520,7 +519,7 @@ JUEGO SIMON SWIPE
 @media (max-width: 630px) {
   #s_tablero {
     width: 406px;
-    height: 306px; }
+    height: 406px; }
     #s_tablero div {
       width: 20px;
       height: 20px; }
@@ -532,7 +531,119 @@ JUEGO SIMON SWIPE
 @media (max-width: 430px) {
   #s_tablero {
     width: 307px;
-    height: 231px; }
+    height: 307px; }
     #s_tablero div {
       width: 15px;
       height: 15px; } }
+
+/* CALCULADORA */
+.c_body {
+  background-color: #e5625e; }
+
+.c_conteiner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.c_titulo {
+  margin: 0 0 3rem 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f7f3e3; }
+
+.c_form {
+  display: flex;
+  flex-direction: column; }
+
+.c_input {
+  font-size: 1.4rem;
+  padding: .5rem .9rem;
+  margin: 0 0 2rem 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 28px -12px #111;
+  background-color: #f7f3e3;
+  color: #222222; }
+
+.c_btn {
+  width: 150px;
+  font-size: 2rem;
+  padding: .2rem .5rem;
+  background-color: #222222;
+  color: #f7f3e3;
+  border: none;
+  border-radius: 10px;
+  margin: .5rem auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 28px -12px #111; }
+
+.c_res_conteiner {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  background-color: #222222;
+  color: #f7f3e3;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 28px -12px #111; }
+
+#c_resultado, .c_resultado_text {
+  font-size: 2rem;
+  font-weight: 700; }
+
+@media (max-width: 620px) {
+  .c_titulo {
+    font-size: 2.2rem;
+    margin: 0 0 1rem 0; }
+  .c_input {
+    width: 300px;
+    margin: 1rem auto; }
+  .c_bconteiner {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .5rem; } }
+
+/* DOLAR */
+.d_body {
+  background-color: #111;
+  color: white; }
+
+.d_conteiner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.d_valores p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 1rem 0; }
+
+#d_input, #d_inputb {
+  width: 300px;
+  font-size: 1.2rem;
+  padding: .5rem 1.2rem;
+  border: none;
+  border-radius: 2px; }
+
+#d_btn, #d_btnb {
+  font-size: 1.1rem;
+  padding: .2rem 1rem;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer; }
+
+.d_res_conteiner {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  background-color: #2a2929;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 0 2rem 0; }

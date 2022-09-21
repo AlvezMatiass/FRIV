@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- FUENTE -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="c_body">
+    
+    <div class="c_conteiner">
+        <div class="c_titulo">
+            Calculadora Simple
+        </div>
+        <div class="c_numeros">
+            <form action="" class="c_form" id="c_formulario">
+                <input type="number" name="" id="c_nuno" class="c_input" placeholder="Ingrese un número">
+                <input type="number" name="" id="c_ndos" class="c_input" placeholder="Ingrese un número">
+            </form>
+            <div class="c_bconteiner">
+                <button type="submit" id="c_suma" class="c_btn">+</button>
+                <button type="submit" id="c_resta" class="c_btn">-</button>
+                <button type="submit" id="c_multi" class="c_btn">*</button>
+                <button type="submit" id="c_division" class="c_btn">/</button>
+            </div>
+        </div>
+        <div class="c_res_conteiner">
+            <p class="c_resultado_text">Resultado</p>
+            <p id="c_resultado"></p>
+        </div>
+    </div>
+
+
+<script src="../js/calculadora.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* DOLAR */
+
+.d_body {
+    background-color: #111;
+    color: white;
+}
+
+.d_conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.d_valores p {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#d_input, #d_inputb {
+    width: 300px;
+    font-size: 1.2rem;
+    padding: .5rem 1.2rem;
+    border: none;
+    border-radius: 2px;
+}
+
+#d_btn, #d_btnb {
+    font-size: 1.1rem;
+    padding: .2rem 1rem;
+    border: none;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.d_res_conteiner {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: #2a2929;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+}
