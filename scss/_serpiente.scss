@@ -92,6 +92,23 @@
     text-align: center;
 }
 
+.s_flechas {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0 0 0;
+    p {
+        font-weight: 300;
+    }
+    div {
+        margin: .2rem 0 0 0;
+        kbd {
+            background-color: #DDDBCB;
+            color: #30292F;
+            padding: .2rem;
+        }
+    }
+}
+
 @media (max-width: 630px) {
     #s_tablero {
         width: 406px;
@@ -106,6 +123,9 @@
         padding: .5rem 0;
         width: 80px;
         margin: .1rem .009rem;
+    }
+    .s_flechas {
+        display: none;
     }
 }
 
