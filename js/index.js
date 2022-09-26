@@ -81,7 +81,7 @@ enviar_registrar.addEventListener("submit" , (e) => {
 })
 
 
-iniciar_sesion.addEventListener("click" , (e) => {
+iniciar_sesion.addEventListener("submit" , (e) => {
     e.preventDefault();
 
     let user_in = iniciar_usuario.value;
