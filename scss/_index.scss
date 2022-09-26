@@ -133,15 +133,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    label {
+    form {
+      text-align: center;
+      label {
         font-size: 2rem;
         color: rgb(43, 42, 42);
         font-weight: 900;
         margin: 0 0 1rem 0;
         line-height: 1rem;
         p {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
+      } 
     }
     button, input {
         font-size: 1rem;

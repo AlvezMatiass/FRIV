@@ -33,25 +33,29 @@
 
     <div id="ind_formulario_conteiner">
         <div class="ind_formulario_registrar_conteiner">
-            <form class="ind_formulario_registrar" id="ind_formulario">
-                <label for="">Registrarse</label>
-                <input type="text" id="ind_formulario_registrar" placeholder="Ingrese un usuario..." required>
-                <input type="password" id="ind_formulario_password" placeholder="Ingrese una contraseña..." required>
-                <button type="submit" id="ind_registrar" class="btn_registrarte">Registrarte</button>
+            <div class="ind_formulario_registrar">
+                <form id="ind_formulario">
+                    <label for="">Registrarse</label>
+                    <input type="text" id="ind_formulario_registrar" placeholder="Ingrese un usuario..." required>
+                    <input type="password" id="ind_formulario_password" placeholder="Ingrese una contraseña..." required>
+                    <button type="submit" id="ind_registrar" class="btn_registrarte">Registrarte</button>
+                </form>
                 <button id="ind_salir_movimiento">Salir</button>
-            </form>
+            </div>
         </div>
     </div>
     <div id="ind_formulario_conteinerDos">
         <div class="ind_formulario_registrar_conteiner">
-            <form class="ind_formulario_registrar" id="ind_formulario_pass">
-                <label for="">Iniciar Sesion</label>
-                <label for="" id="error_iniciar_sesion"></label>
-                <input type="text" name="usuario" id="ind_formulario_iniciar" placeholder="Ingrese un usuario...">
-                <input type="password" name="password" id="ind_formulario_password_iniciar" placeholder="Ingrese una contraseña...">
-                <button type="submit" id="ind_iniciar_sesion" class="btn_registrarte">Iniciar Sesion</button>
+            <div class="ind_formulario_registrar">
+                <form id="ind_formulario_pass">
+                    <label for="">Iniciar Sesion</label>
+                    <label for="" id="error_iniciar_sesion"></label>
+                    <input type="text" name="usuario" id="ind_formulario_iniciar" placeholder="Ingrese un usuario...">
+                    <input type="password" name="password" id="ind_formulario_password_iniciar" placeholder="Ingrese una contraseña...">
+                    <button id="ind_iniciar_sesion" class="btn_registrarte">Iniciar Sesion</button>
+                </form>
                 <button id="ind_salir_movimiento_iniciar">Salir</button>
-            </form>
+            </div>
         </div>
     </div>
 

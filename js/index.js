@@ -80,7 +80,8 @@ enviar_registrar.addEventListener("submit" , (e) => {
     tranformar_cambiar.style.transition = "1s";
 })
 
-iniciar_sesion.addEventListener("submit" , (e) => {
+
+iniciar_sesion.addEventListener("click" , (e) => {
     e.preventDefault();
 
     let user_in = iniciar_usuario.value;
@@ -93,7 +94,7 @@ iniciar_sesion.addEventListener("submit" , (e) => {
         localStorage.setItem("usb" , user_in);
         window.location.href = "./pages/juegos.html"
     } else {
-        error_iniciar.innerHTML = "<p>Usuario o Contraseña no encontrado :(</p>";
+        error_iniciar.innerHTML = `<p>Usuario o Contraseña no encontrado :(</p>`;
     }
 })
 
