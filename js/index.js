@@ -94,7 +94,7 @@ iniciar_sesion.addEventListener("submit" , (e) => {
         localStorage.setItem("usb" , user_in);
         window.location.href = "./pages/juegos.html"
     } else {
-        error_iniciar.innerHTML = `<p>Usuario o Contraseña no encontrado :(</p>`;
+        error_iniciar.innerHTML = `<p>Usuario o Contraseña no encontrado</p>`;
     }
 })
 
