@@ -26,18 +26,18 @@ class Juego {
         }
         this.fallar = new Audio('../simon_sonidos/perder.wav');
         this.sonido_botones = [
-            new Audio('../simon_sonidos/uno.mp3'),
-            new Audio('../simon_sonidos/dos.mp3'),
-            new Audio('../simon_sonidos/tres.mp3'),
-            new Audio('../simon_sonidos/cuatro.mp3'),
-            new Audio('../simon_sonidos/uno.mp3'),
-            new Audio('../simon_sonidos/dos.mp3'),
-            new Audio('../simon_sonidos/tres.mp3'),
-            new Audio('../simon_sonidos/cuatro.mp3'),
-            new Audio('../simon_sonidos/uno.mp3'),
-            new Audio('../simon_sonidos/dos.mp3'),
-            new Audio('../simon_sonidos/tres.mp3'),
-            new Audio('../simon_sonidos/cuatro.mp3')
+            new Audio('../memorizalo/uno.mp3'),
+            new Audio('../memorizalo/dos.mp3'),
+            new Audio('../memorizalo/tres.mp3'),
+            new Audio('../memorizalo/cuatro.mp3'),
+            new Audio('../memorizalo/uno.mp3'),
+            new Audio('../memorizalo/dos.mp3'),
+            new Audio('../memorizalo/tres.mp3'),
+            new Audio('../memorizalo/cuatro.mp3'),
+            new Audio('../memorizalo/uno.mp3'),
+            new Audio('../memorizalo/dos.mp3'),
+            new Audio('../memorizalo/tres.mp3'),
+            new Audio('../memorizalo/cuatro.mp3')
         ]
     }
 
