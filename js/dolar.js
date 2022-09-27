@@ -1,3 +1,5 @@
+//variables
+
 let dolarblue = document.getElementById("d_valordolar");
 
 let input = document.getElementById("d_input");
@@ -14,6 +16,7 @@ let btnb = document.getElementById("d_btnb");
 
 let resultadob = document.getElementById("d_resultadob");
 
+// fetch a API sobre cotizacion de dolar
 
 fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
     .then(response => response.json())

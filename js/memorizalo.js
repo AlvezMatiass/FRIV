@@ -24,7 +24,7 @@ class Juego {
             empezar,
             rondas
         }
-        this.fallar = new Audio('../simon_sonidos/perder.wav');
+        this.fallar = new Audio('../memorizalo/perder.wav');
         this.sonido_botones = [
             new Audio('../memorizalo/uno.mp3'),
             new Audio('../memorizalo/dos.mp3'),

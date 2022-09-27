@@ -41,9 +41,9 @@ function empezar(){
     intervalo = setInterval(movimientos , intervalo_tiempo);
 }
 
+// Movimientos del jugador
+
 function movimientos(){
-    
-    // Movimientos del jugador
     
     if ( 
         (posicion_serpiente[0] + altura >= (altura * altura) && dirreccion === altura) || 
@@ -88,7 +88,7 @@ function manzana_random(){
     cuadrado[manzana].classList.add('manzana');
 }
 
-// controles
+// controles con teclas
 
 function controles(e) {
     cuadrado[jugador_posicion].classList.remove('serpiente')

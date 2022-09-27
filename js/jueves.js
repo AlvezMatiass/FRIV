@@ -1,8 +1,6 @@
 let DateTime = luxon.DateTime;
 let dt = DateTime.now();
 
-console.log(dt)
-
 let jueves_contenedor = document.getElementById("j_conteiner");
 
 if(dt.weekday === 4){
