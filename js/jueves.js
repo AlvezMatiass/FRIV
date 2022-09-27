@@ -1,7 +1,18 @@
+// LUXON
+
 let DateTime = luxon.DateTime;
 let dt = DateTime.now();
 
+// variables
+
 let jueves_contenedor = document.getElementById("j_conteiner");
+
+/* 
+    Explicacion, esto que hice se trata sobre un meme de un Anime
+    donde un personaje te dice "feliz jueves", entonces lo que hice es
+    que la pagina siempre que sea jueves te ponga la frase más el video
+    donde lo dice.
+*/
 
 if(dt.weekday === 4){
     jueves_contenedor.innerHTML = `
